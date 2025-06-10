@@ -1,4 +1,0 @@
-# Label Studio ML Backend requirements
-label-studio-sdk @ git+https://github.com/HumanSignal/label-studio-sdk.git
-Pillow>=9.0.0
-numpy>=1.19.0
