@@ -11,6 +11,21 @@ This repository contains a custom ML backend for Label Studio that generates ran
 - Python 3.11 or higher
 - Docker and Docker Compose
 - Label Studio (included in requirements.txt)
+- Git (for cloning with submodules)
+
+## Repository Structure
+
+This repository uses Git submodules. When cloning, use:
+
+```bash
+# Clone with submodules
+git clone --recurse-submodules https://github.com/your-username/pid-intelligence.git
+
+# Or if you've already cloned the repository
+git submodule update --init
+```
+
+The ML backend code is contained in the `pid-intel-label-studio-ml-backend` submodule.
 
 ## Quick Start
 
@@ -124,6 +139,10 @@ The ML backend is a mock implementation that generates random predictions. In a 
     }
     ```
     Then click "Apply & Restart"
+
+- **Submodule Issues**: If the ML backend code is missing:
+  - Ensure you cloned the repository with submodules: `git clone --recurse-submodules`
+  - Or initialize the submodules after cloning: `git submodule update --init`
 
 - **Prediction Issues**: If you don't see predictions in Label Studio:
   - Check that the ML backend is properly connected in the project settings
