@@ -1,0 +1,3 @@
+[submodule "pid-intel-label-studio-ml-backend"]
+	path = pid-intel-label-studio-ml-backend
+	url = https://github.com/LukeRouleau/pid-intel-label-studio-ml-backend.git
